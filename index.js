@@ -1,4 +1,4 @@
-var fs = require('fs')
+var fs = process.versions.electron ? require('original-fs') : require('fs')
 var path = require('path')
 var async = require('async')
 var yauzl = require('yauzl')
